@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+
+$primary-color: #333333;
+$secondary-color: rgb(225, 242, 245);
+
+body {
+	background-color: $primary-color;
+}
+#playerportrait,
+#guildportrait {
+	border: black solid 2px;
+	margin: 20%;
+}
+
+#lftext {
+	text-align: center;
+	font-family: 'Merriweather', serif;
+	font-size: 22px;
+}
+
+// #portrait {
+// 	width: 200px;
+// 	height: 200px;
+// 	border: 1px solid black;
+// 	border-radius: 100px;
+// 	background: url(male_silhouette.png) center;
+// 	background-size: 100%;
+// 	background-color: #646464;
+// 	// margin: 20px auto;
+// 	// min-height: 200px;
+// 	// min-width: 200px;
+// 	// width: 50%;
+// }
+
+#playerportrait,
+#guildportrait {
+	background-color: $secondary-color;
+}
+
+#por {
+  width: 80%;
+  // height:300px;
+	margin: 0 auto;
+}
+
+#pportrait,
+#gportrait {
+  border-radius: 50%;
+  width: 100%;
+  padding-bottom: 100%;
+  border: 1px solid black;
+  // background-image: url(male_silhouette.png);
+  background-repeat: no-repeat;
+  // background-color: #646464;
+  background-position: center;
+}
+
+#pportrait {
+	background-image   : url(male_silhouette.png),
+                       linear-gradient(to bottom, $primary-color 73%, black 27%);
+}
+
+#gportrait {
+	background-image   : url(eagle_shiloete.svg.med.png);
+	background-color: $primary-color;
+	background-size: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
