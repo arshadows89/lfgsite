@@ -13,5 +13,17 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
+//= require fancybox
 //= require turbolinks
 //= require_tree .
+
+
+    function showGuildForm1(){
+    	$('#guildportraittext, #guildporbuttondiv').hide()
+    	$('#Guildform').show()
+    }
+
+    function showGuildForm2(){
+    	$('#Guildform').hide()	
+    	$('#guildportraittext, #guildporbuttondiv').show()
+    }

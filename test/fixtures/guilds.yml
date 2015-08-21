@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  battletag: MyString
+  email: MyString
+  charname: MyString
+  armory: MyString
+  charclass: MyString
+  level: MyString
+  role: MyString
+  spec: MyString
+
+two:
+  battletag: MyString
+  email: MyString
+  charname: MyString
+  armory: MyString
+  charclass: MyString
+  level: MyString
+  role: MyString
+  spec: MyString

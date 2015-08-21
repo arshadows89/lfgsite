@@ -1,0 +1,12 @@
+<%= form_for :guild, url: guilds_path, method: "post", :html => { :class => 'form-horizontal', multipart: true }  do |f| %>
+	
+	<%= f.text_field :email, placeholder: "Phone Number" %><br />
+
+	<%= f.text_field :class, placeholder: "Email" %><br />
+
+	<%= f.text_field :spec, placeholder: "Street Address" %><br />
+
+	<%= f.text_field :level, placeholder: "City, State, Zipcode" %><br />
+	
+	<%= f.submit "Submit", :class => 'formbuttons'%>
+<% end %>

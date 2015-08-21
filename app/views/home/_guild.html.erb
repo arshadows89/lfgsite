@@ -1,0 +1,13 @@
+<%= form_for :guild, url: guilds_path, method: "post", :html => { :class => 'form-horizontal', multipart: true }  do |f| %>
+	
+	<%= f.text_field :battletag, placeholder: "BattleTag" %><br />
+  <%= f.text_field :email, placeholder: "Email" %><br />
+  <%= f.text_field :charname, placeholder: "Charachter Name" %><br />
+  <%= f.text_field :armory, placeholder: "Charachter Armory" %><br />
+  <%= f.text_field :charclass, placeholder: "Class" %><br />
+  <%= f.text_field :role, placeholder: "Role" %><br />
+  <%= f.text_field :spec, placeholder: "Spec" %><br />
+  <%= f.text_field :level, placeholder: "Level" %><br />
+	
+	<%= f.submit "Submit", :class => 'guildsubmit'%>
+<% end %>

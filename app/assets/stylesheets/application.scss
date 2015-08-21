@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require fancybox
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -52,7 +53,8 @@ body {
 	box-shadow: 0px 0px 1px 0px black, 0px 3px 15px 2px black;
 }
 
-#lftext {
+#lftextplayer,
+#lftextguild {
 	text-align: center;
 	font-family: 'Merriweather', serif;
 	font-size: 22px;
@@ -64,7 +66,8 @@ body {
 	background-color: $secondary-color;
 }
 
-#por {
+#porplayer,
+#porguild {
 	width: 80%;
 	// height:300px;
 	padding: 10px 0;
@@ -94,16 +97,19 @@ body {
 	background-size: 70%;
 }
 
-#portraittext {
+#playerportraittext,
+#guildportraittext {
 	padding: 20px 10px;
 }
 
-#porbuttondiv span:hover > .clickhere {
+#guildporbuttondiv span:hover > .clickhere,
+#playerporbuttondiv span:hover > .clickhere {
     color: $third-color;
     text-shadow: -1px -1px 1px #000;
 }
 
-#porbuttondiv span {
+#playerporbuttondiv,
+#guildporbuttondiv {
     width: 50%;
     height: auto;
     margin: 10px auto 25px;
@@ -111,12 +117,27 @@ body {
     text-align: center;
 }
 
-#porbuttondiv span p {
+#playerporbuttondiv p,
+#guildporbuttondiv p {
     padding: 0;
     margin: 5px;
 }
 
-.porbutton {
+input.guildbutton {
+	width: 96%;
+	height: 51px;
+}
+
+input.guildbuttonback,
+.guildsubmit {
+	width: 50%;
+	height: 51px;
+}
+
+.playerbutton,
+.guildsubmit,
+.guildbutton,
+.guildbuttonback {
     display: block;
     background-color: $primary-color;
     // background-image: -webkit-linear-gradient(100% 100% 90deg, #515151, #7A7A7A);
@@ -149,14 +170,53 @@ body {
 }
 
 
+#Guildform input {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+#Guildform {
+	padding-bottom: 15px;
+}
+
+form.form-horizontal {
+	display: inline;
+}
+
+input.guildsubmit,
+input.guildbuttonback {
+	display: inline !important;
+	width: 40% !important;
+}
+
+input.guildbuttonback {
+	right: 15px;
+	position: absolute;
+}
+
+input {
+	border: 1px solid $primary-color;
+}
 
 
 
 
 
 
+.row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+}
 
 
+
+
+#test {
+	color: white;
+}
 
 
 
