@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   post '/guildupdate', to: 'home#guildupdate'
 
+  get '/guildform', to: 'home#guildform'
+
   resources :guilds
 
 end

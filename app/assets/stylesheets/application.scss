@@ -128,7 +128,7 @@ input.guildbutton {
 	height: 51px;
 }
 
-input.guildbuttonback,
+button.guildbuttonback,
 .guildsubmit {
 	width: 50%;
 	height: 51px;
@@ -139,6 +139,7 @@ input.guildbuttonback,
 .guildbutton,
 .guildbuttonback {
     display: block;
+    color: white;
     background-color: $primary-color;
     // background-image: -webkit-linear-gradient(100% 100% 90deg, #515151, #7A7A7A);
     // background-image: -moz-linear-gradient(100% 100% 90deg, #515151, #7A7A7A);
@@ -176,8 +177,17 @@ input.guildbuttonback,
 	display: block;
 }
 
-#Guildform {
+#guildform {
 	padding-bottom: 15px;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+    width: 500px;
+    height: 435px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -217.5px 0 0 -250px;
 }
 
 form.form-horizontal {
@@ -185,24 +195,34 @@ form.form-horizontal {
 }
 
 input.guildsubmit,
-input.guildbuttonback {
+button.guildbuttonback {
 	display: inline !important;
 	width: 40% !important;
+	margin-top: 10px;
 }
 
-input.guildbuttonback {
-	right: 15px;
+button.guildbuttonback {
+	left: 15px;
 	position: absolute;
+}
+
+input.guildsubmit {
+	position: absolute;
+	right: 15px;
 }
 
 input {
 	border: 1px solid $primary-color;
 }
 
-
-
-
-
+input.guildbutton {
+	color: white;
+}
+input.guildbutton:hover {
+	color: $third-color;
+    text-shadow: -1px -1px 1px #000;
+    text-decoration: none;
+}
 
 .row {
 	display: -webkit-box;
@@ -211,14 +231,56 @@ input {
 	display:         flex;
 }
 
-
-
-
 #test {
 	color: white;
 }
 
+input#guild_battletag,
+input#guild_email,
+input#guild_charname,
+input#guild_armory,
+select#guild_charclass,
+select#guild_spec,
+input#guild_level,
+select#guild_role {
+	margin-bottom: 10px;
+	font-size: 16px;
+	padding: 3px 5px;
+}
 
+select#guild_charclass,
+select#guild_spec,
+select#guild_role {
+	width: 179px;
+	-webkit-appearance: menulist-button;
+	height: 30px;
+}
 
+.fancybox-skin {
+	border: 0 !important;
+}
 
+#guildformtext {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#DeathKnight,
+#Druid,
+#Mage,
+#Monk,
+#Hunter,
+#Warlock,
+#Warrior,
+#Rogue,
+#Paladin,
+#Priest,
+#Shaman {
+	display: none;
+}
+input#guild_level {
+
+}
 
