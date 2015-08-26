@@ -45,11 +45,29 @@ $(document).ready(function() {
 		var e = document.getElementById("guild_charclass");
 		var strUser = e.options[e.selectedIndex].value;
 		if("Death Knight" == strUser) {
-			$('.charclass').hide();
-            $('#DeathKnight').show();
+			$(".charclass").html("<select name='guild[spec]' id='guild_spec'><option value='Pick a Spec'>Pick a Spec</option><option value='Blood'>Blood</option><option value='Frost'>Frost</option><option value='Unholy'>Unholy</option></select>");
+		} else if ("Druid" == strUser) {
+			$(".charclass").html("<select name='guild[spec]' id='guild_spec'><option value='Pick a Spec'>Pick a Spec</option><option value='Balance'>Balance</option><option value='Feral'>Feral</option><option value='Guardian'>Guardian</option><option value='Restoration'>Restoration</option></select>");
+		} else if("Hunter" == strUser) {
+			$(".charclass").html("<select name='guild[spec]' id='guild_spec'><option value='Pick a Spec'>Pick a Spec</option><option value='Beast Mastery'>Beast Mastery</option><option value='Marksmanship'>Marksmanship</option><option value='Survival'>Survival</option></select>");
+		} else if("Mage" == strUser) {
+			$(".charclass").html("<select name='guild[spec]' id='guild_spec'><option value='Pick a Spec'>Pick a Spec</option><option value='Arcane'>Arcane</option><option value='Fire'>Fire</option><option value='Frost'>Frost</option></select>");
+		} else if("Monk" == strUser) {
+			$(".charclass").html("<select name='guild[spec]' id='guild_spec'><option value='Pick a Spec'>Pick a Spec</option><option value='Brewmaster'>Brewmaster</option><option value='Mistweaver'>Mistweaver</option><option value='Windwalker'>Windwalker</option></select>");		
+		} else if("Paladin" == strUser) {
+			$(".charclass").html("<select name='guild[spec]' id='guild_spec'><option value='Pick a Spec'>Pick a Spec</option><option value='Holy'>Holy</option><option value='Protection'>Protection</option><option value='Retribution'>Retribution</option></select>");
+		} else if("Priest" == strUser) {
+			$(".charclass").html("<select name='guild[spec]' id='guild_spec'><option value='Pick a Spec'>Pick a Spec</option><option value='Discipline'>Discipline</option><option value='Holy'>Holy</option><option value='Shadow'>Shadow</option></select>");
+		} else if("Rogue" == strUser) {
+			$(".charclass").html("<select name='guild[spec]' id='guild_spec'><option value='Pick a Spec'>Pick a Spec</option><option value='Assassination'>Assassination</option><option value='Combat'>Combat</option><option value='Subtlety'>Subtlety</option></select>");
+		} else if("Shaman" == strUser) {
+			$(".charclass").html("<select name='guild[spec]' id='guild_spec'><option value='Pick a Spec'>Pick a Spec</option><option value='Elemental'>Elemental</option><option value='Enhancement'>Enhancement</option><option value='Restoration'>Restoration</option></select>");
+		} else if("Warlock" == strUser) {
+			$(".charclass").html("<select name='guild[spec]' id='guild_spec'><option value='Pick a Spec'>Pick a Spec</option><option value='Affliction'>Affliction</option><option value='Demonology'>Demonology</option><option value='Destruction'>Destruction</option></select>");
+		} else if("Warrior" == strUser) {
+			$(".charclass").html("<select name='guild[spec]' id='guild_spec'><option value='Pick a Spec'>Pick a Spec</option><option value='Arms'>Arms</option><option value='Fury'>Fury</option><option value='Gladiator'>Gladiator</option><option value='Protection'>Protection</option></select>");
 		} else {
-            $('.charclass').hide();
-            $('#' + $(this).val()).show();
+
         };
     });
 });

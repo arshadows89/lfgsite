@@ -9,41 +9,9 @@
   <%= f.select :charclass, [['Pick a Class'], ['Death Knight'], ['Druid'], ['Hunter'], ['Mage'], ['Monk'], ['Paladin'], ['Priest'], ['Rogue'], ['Shaman'], ['Warlock'], ['Warrior']] %><br />
 <!--   <%= f.select :role, [['Pick a Role'], ['Dps'], ['Healer'], ['Tank']] %><br /> -->
   <div class='charclass'>
-    <%= f.select :spec, [['Pick a Spec']], :class => 'charclass', :id => 'Pick a Class' %><br />
+     <%= f.select :spec, [['Pick a Spec']], :class => 'charclass', :id => 'Pick a Class' %><br />
   </div>
-  <div class='charclass' id="DeathKnight">
-    <%= f.select :spec, [['Pick a Spec'], ['Blood'], ['Frost'], ['Unholy']], :class => 'charclass', :id => 'Death Knight' %><br />
-  </div>
-  <div class='charclass' id="Druid">
-    <%= f.select :spec, [['Pick a Spec'], ['Balance'], ['Feral'], ['Guardian'], ['Restoration']], :class => 'charclass', :id => 'Druid' %><br />
-  </div>
-  <div class='charclass' id="Hunter">
-  <%= f.select :spec, [['Pick a Spec'], ['Beast Mastery'], ['Marksmanship'], ['Survival']] %><br />
-  </div>
-  <div class='charclass' id="Mage">
-    <%= f.select :spec, [['Pick a Spec'], ['Arcane'], ['Fire'], ['Frost']] %><br />
-  </div>
-  <div class='charclass' id="Monk">
-    <%= f.select :spec, [['Pick a Spec'], ['Brewmaster'], ['Mistweaver'], ['Windwalker']] %><br />
-  </div>
-  <div class='charclass' id="Paladin">
-    <%= f.select :spec, [['Pick a Spec'], ['Holy'], ['Protection'], ['Retribution']] %><br />
-  </div>
-  <div class='charclass' id='Priest'>
-    <%= f.select :spec, [['Pick a Spec'], ['Discipline'], ['Holy'], ['Shadow']] %><br />
-  </div>
-  <div class='charclass' id="Rogue">
-    <%= f.select :spec, [['Pick a Spec'], ['Assassination'], ['Combat'], ['Subtlety']] %><br />
-  </div>
-  <div class='charclass' id="Shaman">
-    <%= f.select :spec, [['Pick a Spec'], ['Elemental'], ['Enchancement'], ['Restoration']] %><br />
-  </div>
-  <div class='charclass' id="Warlock">
-    <%= f.select :spec, [['Pick a Spec'], ['Affliction'], ['Demonology'], ['Destruction']] %><br />
-  </div>
-  <div class='charclass' id="Warrior">
-    <%= f.select :spec, [['Pick a Spec'], ['Arms'], ['Fury'], ['Gladiator'], ['Protection']] %><br />
-  </div>
+
   <%= f.text_field :level, placeholder: "Level" %><br />
 	<%= f.button "Back", :class => 'guildbuttonback' %>
 	<%= f.submit "Submit", :class => 'guildsubmit' %>
