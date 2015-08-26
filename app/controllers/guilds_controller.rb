@@ -9,12 +9,10 @@ class GuildsController < ApplicationController
   end
 
   def create
-	 @guild = Guild.new(guild_params)
-    if @guild.save
-	   redirect_to @guild
-    else
-      redirect_to guildform_path
-    end
+	@guild = Guild.new(guild_params)
+
+	@guild.save
+	redirect_to @guild
   end
 
   private
