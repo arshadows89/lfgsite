@@ -73,7 +73,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     loofah (2.0.2)
-      nokogiri (>= 1.5.9)
+      nokogiri (>= 1.10.4)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.6.1)
